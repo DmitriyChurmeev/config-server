@@ -1,0 +1,15 @@
+
+spring:
+  application:
+    name: config_server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/DmitriyChurmeev/custom-config.git
+          username: ${GIT-REPOSITORY}
+          password: ${GIT-PASS}
+          clone-on-start: true
+
+server:
+  port: 8080
