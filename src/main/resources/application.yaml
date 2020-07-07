@@ -6,8 +6,8 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/DmitriyChurmeev/custom-config.git
-          username: ${GIT-REPOSITORY}
+          uri: ${GIT-REPOSITORY}
+          username: ${GIT-USER}
           password: ${GIT-PASS}
           clone-on-start: true
 
